@@ -32,6 +32,8 @@ public class Employees implements Cloneable {
 
   @Override
   protected Object clone() throws CloneNotSupportedException {
-    return super.clone();
+    Employees empClone = (Employees) super.clone();
+    empClone.emplNames = new ArrayList<>(this.emplNames);
+    return empClone;
   }
 }

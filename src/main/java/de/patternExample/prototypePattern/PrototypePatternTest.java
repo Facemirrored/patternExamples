@@ -27,21 +27,18 @@ public class PrototypePatternTest {
    */
   public void doPrototyping() {
     Employees myEmployees = new Employees();
-    System.out.println("Standard-Employees:\n" + myEmployees.toString());
 
     try {
       Employees prototypeEmployees = (Employees) myEmployees.clone();
       prototypeEmployees.getEmplNames().add("Florian");
       prototypeEmployees.getEmplNames().remove(0);
 
-      System.out.println("Two different objects with clone-method:\nmyEmployees:\n" + myEmployees
+      System.out.println("Two different objects with clone-method:\nmyEmployees:\t" + myEmployees
           + "\nprototypeEmployees:\t" + prototypeEmployees);
 
     } catch (CloneNotSupportedException e) {
       System.out.println("Cannot clone object. Object-class has to implement Cloneable-interface.");
       e.printStackTrace();
     }
-
   }
-
 }

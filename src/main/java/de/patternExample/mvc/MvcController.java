@@ -1,6 +1,7 @@
 package de.patternExample.mvc;
 
 
+import de.patternExample.builderPattern.GamingNightBuilder;
 import de.patternExample.prototypePattern.PrototypePatternTest;
 import java.util.Scanner;
 
@@ -49,6 +50,10 @@ public class MvcController {
                 "Jedes Pattern, besitzt eine Pattern-Test-Klasse (Pattern-Controller), welche jeweils\n"
                     +
                     "als Singleton-Pattern implementiert wurde.");
+            break;
+          case 3:
+            GamingNightBuilder.getInstance().buildGirlzzzGamingNight();
+            GamingNightBuilder.getInstance().buildMeAndMyBoyzGamingNight();
             break;
           case -1:
             exit = true;
