@@ -3,6 +3,7 @@ package de.patternExample;
 public enum PatternTypeEnum {
 
   MVC("Mode-View-Controller-Pattern"),
+  PROTOTYPE("Prototype-Pattern"),
   SINGLETON("Singleton-Pattern");
 
   private String pattern;
