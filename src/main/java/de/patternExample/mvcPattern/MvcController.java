@@ -1,7 +1,8 @@
-package de.patternExample.mvc;
+package de.patternExample.mvcPattern;
 
 
 import de.patternExample.builderPattern.GamingNightBuilder;
+import de.patternExample.factoryPattern.ShapeFactory;
 import de.patternExample.prototypePattern.PrototypePatternTest;
 import java.util.Scanner;
 
@@ -54,6 +55,14 @@ public class MvcController {
           case 3:
             GamingNightBuilder.getInstance().buildGirlzzzGamingNight();
             GamingNightBuilder.getInstance().buildMeAndMyBoyzGamingNight();
+            break;
+          case 4:
+            System.out.println("Shape factory -> create circle:");
+            ShapeFactory.getInstance()
+                .createShape("circle").draw();
+            System.out.println("Shape factory -> create circle:");
+            ShapeFactory.getInstance()
+                .createShape("rectangle").draw();
             break;
           case -1:
             exit = true;

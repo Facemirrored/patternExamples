@@ -5,7 +5,8 @@ public enum PatternTypeEnum {
   MVC("Mode-View-Controller-Pattern"),
   PROTOTYPE("Prototype-Pattern"),
   SINGLETON("Singleton-Pattern"),
-  BUILDER("Builder-Pattern");
+  BUILDER("Builder-Pattern"),
+  FACTORY("Factory-Pattern");
 
   private String pattern;
 

@@ -1,4 +1,4 @@
-package de.patternExample.mvc;
+package de.patternExample.mvcPattern;
 
 import de.patternExample.PatternTypeEnum;
 
